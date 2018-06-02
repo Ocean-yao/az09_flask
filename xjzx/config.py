@@ -25,8 +25,8 @@ class Config(object):
     BASE_DIR = os.path.dirname(os.path.abspath(__file__))
 
     # 七牛云配置,需要将信息进行更改，个人中心秘钥管理
-    QINIU_AK = '1zd3yuMF4Yy5sfVtO7L_r_37BHBtAT7coE9GLTKT'
-    QINIU_SK = 'D_HH8V7aRe96xhijYKJCVUHdvaZamX0myDxsSn9a'
+    QINIU_AK = 'H999S3riCJGPiJOity1GsyWufw3IyoMB6goojo5e'
+    QINIU_SK = 'uOZfRdFtljIw7b8jr6iTG-cC6wY_-N19466PXUAb'
     QINIU_BUCKET = 'itcast20171104'
     QINIU_URL = 'http://oyvzbpqij.bkt.clouddn.com/'
 

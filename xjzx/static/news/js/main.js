@@ -128,7 +128,7 @@ $(function(){
             }
             else if(data.result=3){
                 $('.lgin_pic').attr('src',data.avatar);
-                $('#login_user_id').html(data.nick_name);
+                $('#nick_name').html(data.nick_name);
                 $('.user_login').show();
                 $('.user_btns').hide();
                 $('.login_form_con').hide();
@@ -212,7 +212,10 @@ $(function(){
         $.post('/user/logout',{
           csrf_token:csrf_token
         },function(data){
-            if(data.result==1){
+            if(location.pathname='/user/'){
+                location.href='/'
+            }
+            else{
                 $('.user_login').hide();
                 $('.user_btns').show()
             }
@@ -273,7 +276,7 @@ function fnChangeMenu(n) {
     if (n >= 0) {
         $li.eq(n).addClass('active').siblings().removeClass('active');
         // 执行 a 标签的点击事件
-        $li.eq(n).find('a')[0].click()
+        // $li.eq(n).find('a')[0].click()
     }
 }
 

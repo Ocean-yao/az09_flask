@@ -297,17 +297,17 @@ body{
 	color:#39f;
 }
 
-.rank_list li .first{
+.rank_list li .count1{
 	background: #f33;
 	color:#fff;
 }
 
-.rank_list li .second{
+.rank_list li .count2{
 	background:#ff722b;
 	color:#fff;
 }
 
-.rank_list li .third{
+.rank_list li .count3{
 	background:#fa3;
 	color:#fff;
 }
@@ -1041,6 +1041,15 @@ body{
 	margin:20px auto;
 	overflow:hidden;
 	position:relative;
+}
+
+.form-image{
+	width: 600px;
+	height: 300px;
+
+}
+.form-image img{
+	margin: 0 auto;
 }
 
 .form-group label{

@@ -2,7 +2,7 @@ from flask import Flask
 import logging
 from logging.handlers import RotatingFileHandler
 from flask_wtf.csrf import CSRFProtect
-
+from flask_session import Session
 
 
 def create_app(config):
@@ -10,6 +10,8 @@ def create_app(config):
     app = Flask(__name__)
     CSRFProtect(app)
     app.config.from_object(config)
+    Session(app)
+    #在app对象上启用flask_session
 
     #注册蓝图
     from views_user import user_blueprint
